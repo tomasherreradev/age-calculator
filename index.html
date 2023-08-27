@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<main class="contenedor"> 
+
+  <div class="contenedor__formulario">
+
+    <form action="" class="formulario">
+      <div class="campo">
+        <label class="campo__label" for="day">day</label>
+        <input 
+              type="number"
+              id="day"
+              name="day"
+              placeholder="dd"
+              class="campo__input"
+              min="1"
+              max="31"
+              >
+      </div>
+
+      <div class="campo">
+        <label class="campo__label" for="month">Month</label>
+        <input 
+              type="number"
+              id="month"
+              name="month"
+              placeholder="mm"
+              class="campo__input"
+              min="1"
+              max="12"
+              >
+      </div>
+
+      <div class="campo">
+        <label class="campo__label" for="year">Year</label>
+        <input 
+              type="number"
+              id="year"
+              name="year"
+              placeholder="yyyy"
+              class="campo__input"
+              min="1850"
+              max=""
+              >
+      </div>
+    </form>
+
+    <div class="flecha" id="boton">
+      <img src="/assets/images/icon-arrow.svg" alt="">
+    </div>
+  </div>
+
+  
+  <section class="calculadora">
+    <div class="datos">
+        <p><span id="spanAños">--</span> years</p>
+    </div>
+
+    <div class="datos">
+        <p><span id="spanMeses">--</span> months</p>
+    </div>
+
+    <div class="datos">
+        <p><span id="spanDias">--</span> days</p>
+    </div>
+  </section>
+
+
+</main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+
+  <script src="/app.js"></script>
+  
+</body>
+</html>
